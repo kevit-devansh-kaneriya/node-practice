@@ -1,4 +1,4 @@
-var company = "Coding Academy";
+// var company = "Coding Academy";
 // console.log(company);
 // console.log(company.length)
 // console.log(company.toUpperCase())
@@ -22,11 +22,34 @@ var company = "Coding Academy";
 // console.log(company.charCodeAt(4))
 // console.log(company.indexOf("n"))
 // console.log(company.lastIndexOf("e"))
-const sentence = '    You cannot end a sentence with because because because is a conjunction   ';
+// const sentence = '    You cannot end a sentence with because because because is a conjunction   ';
 // console.log(sentence.indexOf("because"))
 // console.log(sentence.lastIndexOf("because"))
-console.log(sentence.search("end"))
-console.log(sentence.trim())
+// console.log(sentence.search("end"))
+// console.log(sentence.trim())
+// console.log(company.startsWith("Coding"))
+// console.log(company.endsWith("Coding"))
+// console.log(company.match("C"))
 
-21.
-remaning
+// const sentence = 'You cannot end a sentence with because because because is a conjunction';
+// const wordToFind = 'because';
+// const regex = new RegExp(wordToFind, 'g');
+// const occurrences = sentence.match(regex);
+// console.log(occurrences.length);
+
+// var company = "Coding Academy";
+// const string1 = 'Coding';
+// const string2 = 'Academy';
+// console.log(string1.concat(' ', string2));
+// console.log(company.repeat(5));
+
+// var amt1=5000 * 12;
+// var amt2=10000;
+// var amt3=15000 * 12;
+// console.log(amt1 + amt2 + amt3 )
+
+const x = 10;
+const y = 5;
+const isTrue = x > y; 
+console.log(isTrue); 
+
