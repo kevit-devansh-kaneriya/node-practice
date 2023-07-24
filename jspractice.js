@@ -209,3 +209,99 @@
 // const inputArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // const shuffledResult = shuffle(inputArray);
 // console.log(shuffledResult);
+
+const users = [
+    {
+      name: 'Brook',
+      scores: 75,
+      skills: ['HTM', 'CSS', 'JS'],
+      age: 16,
+    },
+    {
+      name: 'Alex',
+      scores: 80,
+      skills: ['HTM', 'CSS', 'JS'],
+      age: 18,
+    },
+    {
+      name: 'David',
+      scores: 75,
+      skills: ['HTM', 'CSS'],
+      age: 22,
+    },
+    {
+      name: 'John',
+      scores: 85,
+      skills: ['HTM'],
+      age: 25,
+    },
+    {
+      name: 'Sara',
+      scores: 95,
+      skills: ['HTM', 'CSS', 'JS'],
+      age: 26,
+    },
+    {
+      name: 'Martha',
+      scores: 80,
+      skills: ['HTM', 'CSS', 'JS'],
+      age: 18,
+    },
+    {
+      name: 'Thomas',
+      scores: 90,
+      skills: ['HTM', 'CSS', 'JS'],
+      age: 20,
+    },
+  ];
+  
+  // Function to filter users with scores greater than 85
+  function filterUsersByScore(users) {
+    return users.filter((user) => user.scores > 85);
+  }
+  
+  // Function to add a user to the users array if the user does not exist
+  function addUser(user) {
+    const existingUser = users.find((u) => u.name === user.name);
+    if (!existingUser) {
+      users.push(user);
+    }
+  }
+  
+  // Function to add a skill to a user's skills array if the user exists
+  function addUserSkill(name, skill) {
+    const user = users.find((u) => u.name === name);
+    if (user) {
+      user.skills.push(skill);
+    }
+  }
+  
+  // Function to edit a user if the user exists in the users array
+  function editUser(name, newDetails) {
+    const user = users.find((u) => u.name === name);
+    if (user) {
+      Object.assign(user, newDetails);
+    }
+  }
+  
+  // Test the functions
+  console.log('Users with scores greater than 85:', filterUsersByScore(users));
+  
+  const newUser = {
+    name: 'Peter',
+    scores: 70,
+    skills: ['HTML', 'CSS', 'JS'],
+    age: 21,
+  };
+  addUser(newUser);
+  console.log('Users after adding new user:', users);
+  console.log(' ');
+  
+  addUserSkill('Peter', 'React');
+  console.log('Users after adding skill to Peter:', users);
+  console.log(' ');
+  
+  editUser('Peter', { scores: 85, age: 22 });
+  console.log('Users after editing Peter:', users);
+  console.log(' ');
+  
