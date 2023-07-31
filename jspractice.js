@@ -209,3 +209,225 @@
 // const inputArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // const shuffledResult = shuffle(inputArray);
 // console.log(shuffledResult);
+
+// const users = [
+//   {
+//     name: 'Brook',
+//     scores: 75,
+//     skills: ['HTM', 'CSS', 'JS'],
+//     age: 16,
+//   },
+//   {
+//     name: 'Sara',
+//     scores: 95,
+//     skills: ['HTM', 'CSS', 'JS'],
+//     age: 26,
+//   },
+//   {
+//     name: 'Thomas',
+//     scores: 90,
+//     skills: ['HTM', 'CSS', 'JS'],
+//     age: 20,
+//   },
+// ];
+
+// function filterUsersByScore(users) {
+//   return users.filter((user) => user.scores > 85);
+// }
+
+// function addUser(user) {
+//   const existingUser = users.find((u) => u.name === user.name);
+//   if (!existingUser) {
+//     users.push(user);
+//   }
+// }
+
+// function addUserSkill(name, skill) {
+//   const user = users.find((u) => u.name === name);
+//   if (user) {
+//     user.skills.push(skill);
+//   }
+// }
+
+// function editUser(name, newDetails) {
+//   const user = users.find((u) => u.name === name);
+//   if (user) {
+//     Object.assign(user, newDetails);
+//   }
+// }
+
+// console.log('Users with scores greater than 85:', filterUsersByScore(users));
+// console.log(' ');
+// console.log(' ');
+// console.log(' ');
+
+// const newUser = {
+//   name: 'Peter',
+//   scores: 70,
+//   skills: ['HTML', 'CSS', 'JS'],
+//   age: 21,
+// };
+// addUser(newUser);
+// console.log('Users after adding new user:', users);
+// console.log(' ');
+// console.log(' ');
+// console.log(' ');
+
+// addUserSkill('Peter', 'React');
+// console.log('Users after adding skill to Peter:', users);
+// console.log(' ');
+
+// editUser('Peter', { scores: 85, age: 22 });
+// console.log('Users after editing Peter:', users);
+// console.log(' ');
+
+
+// let dog = {};
+// dog.name = 'Buddy';
+// dog.legs = 4;
+// dog.color = 'brown';
+// dog.age = 3;
+// dog.bark = function() {
+//   return 'woof woof';
+// };
+// dog.breed = 'labrador';
+// dog.getDogInfo = function() {
+//   return `${this.name} is a ${this.age}-year-old ${this.color} ${this.breed} with ${this.legs} legs.`;
+// };
+// console.log('Name:', dog.name);
+// console.log('Legs:', dog.legs);
+// console.log('Color:', dog.color);
+// console.log('Age:', dog.age);
+// console.log('Breed:', dog.breed);
+// console.log(dog.bark()); 
+// console.log(dog.getDogInfo()); 
+
+// let personAccount = {
+//   firstName : 'Devansh',
+//   lastName : 'Kaneriya',
+//   incomes : [],
+//   expenses : [],
+
+//   totalIncome: function() {
+//     let total = 0;
+//     for (let income of this.incomes) {
+//       total += income.amount;
+//     }
+//     return total;
+//   },
+
+//   totalExpense: function() {
+//     let total = 0;
+//     for (let expense of this.expenses) {
+//       total += expense.amount;
+//     }
+//     return total;
+//   },
+
+//   accountInfo: function() {
+//     return `Account Information for ${this.firstName} ${this.lastName}`;
+//   },
+
+//   addIncome: function(description, amount) {
+//     this.incomes.push({ description: description, amount: amount });
+//   },
+
+//   addExpense: function(description, amount) {
+//     this.expenses.push({ description: description, amount: amount });
+//   },
+
+//   accountBalance: function() {
+//     let totalIncome = this.totalIncome();
+//     let totalExpense = this.totalExpense();
+//     return totalIncome - totalExpense;
+//   }
+// };
+
+// personAccount.addIncome('Salary', 2000);
+// personAccount.addIncome('Freelance', 500);
+// personAccount.addExpense('Rent', 800);
+// personAccount.addExpense('Utilities', 200);
+
+
+// console.log(personAccount.accountInfo());
+// console.log('Total Income:', personAccount.totalIncome());
+// console.log('Total Expense:', personAccount.totalExpense());
+// console.log('Account Balance:', personAccount.accountBalance());
+
+// let users = [
+//   { username: 'user1', isLoggedIn: true, points: 30 },
+//   { username: 'user2', isLoggedIn: false, points: 40 },
+//   { username: 'user3', isLoggedIn: true, points: 55 },
+//   { username: 'user4', isLoggedIn: true, points: 70 },
+//   { username: 'user5', isLoggedIn: false, points: 20 },
+//   { username: 'user6', isLoggedIn: true, points: 90 },
+// ];
+
+// let loggedInUsers = 0;
+// let usersWith50PointsOrMore = 0;
+
+// for (let user of users) {
+//   if (user.isLoggedIn) {
+//     loggedInUsers++;
+//   }
+
+//   if (user.points >= 50) {
+//     usersWith50PointsOrMore++;
+//   }
+// }
+
+// console.log('Logged-in Users:', loggedInUsers);
+// console.log('Users with 50 Points or More:', usersWith50PointsOrMore);
+
+// let users = [
+//   { username: 'user1', isLoggedIn: true, points: 30 },
+//   { username: 'user2', isLoggedIn: false, points: 40 },
+//   { username: 'user3', isLoggedIn: true, points: 55 },
+//   { username: 'user4', isLoggedIn: true, points: 70 },
+//   { username: 'user5', isLoggedIn: false, points: 20 },
+//   { username: 'user6', isLoggedIn: true, points: 90 },
+// ];
+
+// let myName = 'John'; 
+// let point = 33; 
+// users[0].username = myName; 
+// users[0].points = point; 
+// console.log(users);
+
+// let keys = Object.keys(users[0]);
+// console.log(keys);
+
+// let values = Object.values(users[0]);
+// console.log(values);
+
+// const skills = ['HTML', 'CSS', 'JS', 'React','Node', 'Python']
+// jsonfor=JSON.stringify(skills)
+// console.log(typeof(jsonfor[0]))
+// console.log(jsonfor)
+
+
+// let age = 250;
+
+// let isMarried = true
+// jsonfor=JSON.stringify(isMarried)
+// console.log(typeof(jsonfor[0]))
+// console.log(jsonfor)
+
+// const student = {
+//   firstName:'Asabeneh',
+//   lastName:'Yetayehe',
+//   age:250,
+//   isMarried:true,
+//   skills:['HTML', 'CSS', 'JS', 'React','Node', 'Python', ]
+// }
+
+// objectstring=JSON.stringify(student)
+// console.log(typeof(objectstring[0]))
+// console.log(objectstring)
+
+// firstName=JSON.stringify(student.firstName)
+// lastName=JSON.stringify(student.lastName)
+// skills=JSON.stringify(student.skills)
+// console.log(firstName)
+// console.log(lastName)
+// console.log(skills)
